@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe website</title>
+
+     <style>
+        body {
+            background-image: url('beige back.jpg');
+        }
+
+
+        h1 { text-align: center;     color: black;}
+        h1 { background-color: khaki;}
+
+        h2 { text-align: center;}
+        h2 { font-family: 'Times New Roman', Times, serif;}
+        h3 { text-align: center;}
+        h3, p {
+            background-color: beige;
+            color: black;
+        }
+       
+
+
+        
+        h4 { text-align: center;}
+
+        h5 img {
+          float: left;
+          width: 500px;
+          height: 350px;
+          margin: 50px;
+        }
+        h5 { text-align: center;}
+        h5 { font-size: large;}
+        h5, p { 
+          background-color: beige;
+          color: black;
+        }
+
+       ul {
+         list-style: none;
+         text-align: center;
+         border-top: 1px solid brown;
+         border-bottom: 1px solid yellow;
+         padding: 10px 0;
+       }
+       ul li {
+          
+          display: inline;
+          text-transform: uppercase;
+          padding: 0 10px;
+          letter-spacing: 10px;
+       }
+       ul li a {
+         
+         text-decoration: underline;
+         color: black;
+       }
+       ul li a:hover {
+          text-decoration: underline;
+       }
+     </style>
+
+</head>
+<body>
+   
+
+
+    <h1>BeanGrove Cafe</h1>
+    <img src="cafe1.jpg" width="600" height="400">
+    <img src="cafe2.jpg" width="600" height="400">
+    <img src="cafe3.jpg" width="600" height="400">
+
+    <h2>Where delicious coffee beans sustainable!</h2>
+    <hr  />
+
+    <h3>OUR STORY</h3>
+    
+       
+    <h4>Bean Grove is not just about great coffee;  
+        <br>it's about responsible sourcing.<br>
+        The cafe is committed to sustainability, ensuring that the beans are ethically
+        <br>and environmentally sourced.<br>
+    </h4>
+    <hr  />
+
+    <h5>Bean Grove system</h5>    
+    <img src="1.jpg" width="500" height="350" style="margin-left:200px">
+    <img src="2 (2).jpg" width="500" height="350">
+    <img src="3.jpg" width="500" height="350">
+    
+    <ul>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+      <li><a href="homepage.html">Homepage</a></li>
+    </ul>
+    
+    <img src="nice.jpg" id="image" width="1000px">
+
+    <script>
+     let num = 0;
+     
+     function show() {
+        if(num==0) {
+         document.getElementById("image").src = "city.jpg";
+         num =1;
+        }
+        else if(num==1){
+         document.getElementById("image").src ="hongkong.jpg";
+         num =2;
+        }
+        else if(num==2){
+         document.getElementById("image").src = "info.png";
+         num = 3;
+        }
+        else{
+         document.getElementById("image").src = "nice.jpg";
+         num = 0;
+        }
+
+       setTimeout('show()',1500);
+     }
+
+
+     show();
+    </script>
+</body>
+</html>
